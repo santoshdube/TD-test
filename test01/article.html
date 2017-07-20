@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<title>Woodward - Article</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/lib/bootstrap/bootstrap-grid.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/animate.css " type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/fonts.css " type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+</head>
+<body>
+  <div class="container-fluid no-padding" >
+    <header>
+      <div class="users-section" id="header">
+          <nav class="navbar">
+            <div class="nav-row top">
+                <div class="container">
+                  <div class="row navbar-bg no-gutters">
+                        <div class="col-6 col-sm-6 col-md-6 text-left hidden-lg-up">
+                          <a href="index.html" title="home"><picture>
+                              <source srcset="assets/images/woodward-logo-xs-small.png" media="(max-width: 576px)">
+                              <source srcset="assets/images/woodward-logo-small.png" media="(m-width: 576px)">
+                              <img src="assets/images/woodward-logo-small.png" class="d-block my-2" alt="Logo">
+                            </picture></a>
+                        </div>
+                        <div class="col-lg-5 col-xl-5 text-left hidden-md-down">
+                            <p class="tag-line">Innovative <span>Aerospace</span> and <span>Industrial</span> Solution</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 text-center hidden-md-down">
+                            <a href="javascript:void(0);" class="fa fa-linkedin fa-1x social-icon"></a>
+                            <a href="javascript:void(0);" class="fa fa-facebook fa-1x social-icon"></a>
+                            <a href="javascript:void(0);" class="fa fa-twitter fa-1x social-icon"></a>
+
+                        </div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 text-right btn-grp">
+                          <button type="button" class="btn btn-default user-link support d-inline-block" data-target="#dropdown-support" data-toggle="dropdown">
+                            <span class="icon-support"></span>
+                          <span class="hidden-md-down">Support Center</span>
+                        </button><span class="hidden-md-down">&nbsp;&nbsp;</span>
+                        <span class="user-registration d-inline-block" id="user-registration">
+                          <button type="button" class="btn btn-default user-link btn-register" id="login" data-target="#login-popup" data-toggle="dropdown" data-parent="#user-register">
+                            <span class="icon-login"></span>
+                             <span class="hidden-md-down">Login</span>
+                          </button><span class="hidden-md-down d-inline-block align-middle v-line">&nbsp;|&nbsp;</span>
+                          <a href="javascript:void(0);" class="btn btn-default d-inline-block user-link r-link hidden-md-down btn-register" id="register" data-target="#login-popup" data-toggle="dropdown"  data-parent="#user-register"><span>Register</span></a>
+                        </span>
+                          <button class="hidden-lg-up navbar-t-icon" type="button" data-toggle="dropdown" data-target="#popup-menu">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                          <div class="login-popup dropdown-menu fadeIn animated" role="menu" id="login-popup">
+                            <div class="login-container">
+                              <div class="input-group">
+                                    <span class="icon-email"></span>
+                                    <input id="email" type="email" class="form-control input-login" name="email" value="" placeholder="Email" autocomplete="off">
+                                </div>
+                                <div class="input-group">
+                                    <span class="icon-password"></span>
+                                    <input id="password" type="password" class="form-control input-passord" name="email" value="" placeholder="Password" autocomplete="off">
+                                    <span class="icon-help"></span>
+                                </div>
+                                <div class="login-btn"><button class="btn btn-primary btn-block" type="submit" onclick="window.location.href='MyAccountDetails.html'">Submit</button></div>
+                            </div>
+                            <!-- <div class="register-container">
+                              <div class="input-group">
+                                    <span class="icon-email"></span>
+                                    <input id="email" type="email" class="form-control input-login" name="email" value="" placeholder="Email Address" autocomplete="off">
+                                </div>
+                                <div class="input-group">
+                                    <span class="icon-password"></span>
+                                    <input id="password" type="password" class="form-control input-passord" name="email" value="" placeholder="Password" autocomplete="off">
+                                    <span class="icon-help"></span>
+                                </div>
+                                <div class="login-btn"><button class="btn btn-primary btn-block" type="submit">Submit</button></div>
+                            </div> -->
+                          </div>
+                          <div class="register-popup dropdown-menu" role="menu" id="login-popup">
+                            <div class="input-group">
+                                  <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address" autocomplete="off">
+                                  <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                              </div>
+                              <div class="input-group">
+                                  <input id="password" type="password" class="form-control" name="email" value="" placeholder="Password" autocomplete="off">
+                                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                              </div>
+                              <button class="btn btn-primary btn-block" type="submit">Submit</button>
+                          </div>
+                          <div class="support-popup dropdown-menu fadeIn animated" id="dropdown-support" role="menu">
+                              <div class="content">
+                                <h4><strong>HOW CAN WE HELP</strong></h4>
+                                <p>Tell us what you're looking for so that we can direct you to the right place...</p>
+                                <div class="input-group">
+                                  <label for="looking" class="form-label sr-only">Start Typing</label>
+                                    <input type="text" class="form-control w-75" id="looking" placeholder="Start typing...">
+                                    <button class="btn btn-primary btn-block w-25 ml-3" type="submit">
+                                        <span class="fa fa-search"></span>
+                                      </button>
+                                </div>
+                                <p class="mt-3 mb-1 r-faq">Related FAQ'S</p>
+                                <ul>
+                                    <li>Are you looking for this?</li>
+                                    <li>Are you looking for this?</li>
+                                    <li>Are you looking for this?</li>
+                                </ul>
+                                <p class="mb-3"><a href="javascript:void(0);" class="view-all">View all</a></p>
+                                <p class="mb-1 look-for">Still can't find what you're looking for?</p>
+                                <p>You can raise a ticket or send an instant message.</p>
+                              </div>
+                                <div class="d-flex justify-content-between support-footer">
+                                    <div class="d-inline-flex w-50 py-2 text-center p-1"><a href="javascript:void(0);" class="d-block w-100"><i class="fa fa-pencil-square-o"></i><br />RAISE A TICKET</a></div>
+                                    <div class="d-inline-flex w-50  py-2 text-center p-2"><a href="javascript:void(0);" class="d-block w-100" data-target="#chat-support" data-toggle="dropdown"><i class="fa fa-commenting-o"></i><br />INSTANT MESSAGE</a></div>
+                                  </div>
+                          </div>
+                          <div class="chat-support dropdown-menu" id="chat-support" role="menu">
+                              <div class="chat-header">
+                                <div class="d-flex justify-content-between">
+                                    <div class="p-2"><p>CHAT SUPPORT</p></div>
+                                    <div class="p-2"><a href="javascript:void(0);" data-target="#chat-support" data-toggle="dropdown"></a></div>
+                                  </div>
+                              </div>
+                              <div class="chat-area">
+                                <span class="d-blcok">01:30</span>
+                                <span class="d-block chat-bubble">
+                                  <p>Hi there, you are tallking to Stev. How can I help you?</p>
+                                  <span class="bubble-tip"></span>
+                                </span>
+                              </div>
+                              <div class="chat-footer">
+                              <div class="row no-gutters">
+                                  <div class="col-12">
+                                    <div class="input-group">
+                                      <label for="chat-input" class="form-label sr-only">Start Typing</label>
+                                        <input type="text" class="form-control chat-input" id="chat-input" placeholder="Start typing...">
+                                        <button class="btn btn-primary chat-btn" type="submit">SEND</button>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="nav-row">
+                  <div class="container">
+                  <div class="row hidden-md-down">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-left">
+                        <a href="index.html" title="home"><img src="assets/images/WOODWARD_LOGO.jpg" alt="Logo" /></a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-right">
+                      <div class="navbar-collapse">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a href="about.html" class="nav-links">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="javascript:void(0);" class="nav-links" id="product" data-target="#menu-products" data-toggle="dropdown">PRODUCTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="news.html" class="nav-links">NEWS &amp; INSIGHTS</a>
+                            </li>
+                            <li class="nav-item search">
+                              <a href="javascript:void(0);" class="icon-search" id="search" data-target="#menu-search" data-toggle="dropdown"></a>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="popup-menu" id="popup-menu">
+                    <div class="menu-search collapse"  id="menu-search">
+                        <form>
+                          <div class="row no-gutters">
+                              <div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6 bt-border pb-lg-3 pb-xl-3">
+                                <div class="form-group">
+                                  <label for="search" class="form-label sr-only">Search</label>
+                                    <input type="text" class="form-control" id="search" placeholder="I'm looking for...">
+                                </div>
+                              </div>
+                              <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3 bt-border ">
+                                <div class="form-group">
+                                  <label for="select" class="form-label sr-only">Search</label>
+                                  <select class="custom-select w-100" id="select">
+                                    <option>Oil & Gas</option>
+                                    </select>
+                                </div>
+                              </div>
+                              <div class="col-1 col-sm-1 col-md-2 col-lg-3 col-xl-3 bt-border btn-cell">
+                                <button class="btn btn-primary btn-block btn-icon-search" type="button" onclick="window.location.href='SearchResult.html'">
+                                    <span class="hidden-lg-up fa fa-search"></span>
+                                    <span class="hidden-md-down">Submit</span>
+                                  </button>
+                              </div>
+
+                          </div>
+                        </form>
+                        <form>
+                          <div class="row mt-4 no-gutters">
+                              <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-cell">
+                                  <p class="py-3 text1 text-label nowrap"><strong>Do you have a PN/SN number?</strong></p>
+                              </div>
+                              <div class="col-11 col-sm-11 col-md-11 col-lg-5 col-xl-5">
+                                <div class="form-group">
+                                  <label for="pnsn" class="form-label sr-only">Search</label>
+                                    <input type="email" class="form-control" id="pnsn" placeholder="Type here...">
+                                </div>
+                              </div>
+                              <div class="col-1 col-sm-1 col-md-1 col-lg-3 col-xl-3 btn-cell">
+                                <button class="btn btn-primary btn-block btn-icon-search" type="button" onclick="window.location.href='SearchResult.html'">
+                                  <span class="hidden-lg-up fa fa-search"></span>
+                                    <span class="hidden-md-down">Submit</span>
+                                </button>
+                              </div>
+
+                          </div>
+                        </form>
+                    </div>
+                    <div class="menu-products collapse"  id="menu-products">
+                      <div class="row no-gutters">
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+                            <ul class="row no-gutters">
+                                  <li class="col-12 hidden-lg-up h-line"><a class="mobile-menu-title up-down" href="about.html">About</a>
+                                    <div class="hidden-lg-up" id="a_menu">
+                                    </div>
+                                  </li>
+                                  <li class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 h-line"><a class="mobile-menu-title hidden-lg-up up-arrow" href="javascript:void(0);">Product</a>
+                                    <div class="row menu-items " id="p-menu">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <p class="menu-list-title nowrap">PRODUCT PLATFORMS</p>
+                                        <ul class="normal-list">
+                                            <li class="pb-1"><a href="505StreamPage.html">Actuation</a></li>
+                                            <li class="pb-1"><a href="505StreamPage.html">Values</a></li>
+                                            <li class="pb-1"><a href="505StreamPage.html">Pumps</a></li>
+                                            <li class="pb-1"><a href="505StreamPage.html">Flight Control</a></li>
+                                            <li class="pb-1"><a href="505StreamPage.html">Governors</a></li>
+                                            <li class="pb-1"><a href="505StreamPage.html">Controls</a></li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                        <p class="menu-list-title">SHOP</p>
+                                        <ul class="normal-list w-100 mb-2">
+                                            <li class="pb-1"><a href="ShopPage.html" class="py-1">Industrial Aftermarket Parts</a></li>
+                                            <li class="pb-1"><a href="ShopPage.html" class="py-1">Turbine Aftermarket Parts</a></li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="col-12 hidden-lg-up mb-4 h-line"><a class="mobile-menu-title up-down" href="index.html">News & Insights</a>
+                                    <div class="hidden-lg-up" id="n_menu">
+                                    </div>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
+                            <h4>WELCOME TO THE<br />
+                            WOODWARD BETA SITE.</h4>
+                            <p class="text-1">We will be making updates and expandin available products in the near future</p>
+                            <button class="btn btn-primary w-75" type="submit">Send us feedback</button>
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+        </nav>
+        </div>
+      </div>
+
+
+    </header>
+<article>
+  <div class="article-banner">
+    <div class="container">
+      <div class="article-caption">
+        <h1 class="text-ff">Article Heading</h1>
+        <span class="text-ff">Lorem ipsum dolor sit amet, consectetur cing <br class="hidden-sm-down" />elit, sed do eiusmod tempor incididunt ut labore</span>
+      </div>
+    </div>
+  </div>
+  <div class="banner-footer">
+          <div class="container">
+              <div class="row no-gutters">
+                <div class="col-4 col-sm-5 col-md-4 col-lg-4 col-xl-4"><a href="javascript:void(0);" title="Save this Article" class=""><img src="assets/images/save-icon-white.png" alt="Logo"></a>&nbsp;&nbsp;&nbsp;<span class="utility-text hidden-xs-down text-ff">SAVE THIS ARTICLE</span></div>
+                <div class="col-8 col-sm-7 col-md-8 col-lg-8 col-xl-8 text-right"><span class="utility-text hidden-xs-down text-ff d-inline-block pb-3">SHARE THIS ARTICLE</span>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="fa fa-linkedin utility-icon round  px-2 fa-2x mt-1"></a> <a href="javascript:void(0);"  class="fa fa-facebook utility-icon round px-2 fa-2x"></a> <a href="javascript:void(0);"  class="fa fa-twitter utility-icon round px-2 fa-2x"></a></div>
+              </div>
+          </div>
+  </div>
+</article>
+<article class="article-content-box mt-5">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 px-5">
+          <h2><strong>SUB HEADING</strong></h2>
+          <p>Woodward is an independent designer, manufacturer, and service provider of control solutions for the aerospace and industrial markets. Our aerospace systems and components optimize the performance of fixed wing and rotorcraft platforms in commercial, business and military aircraft, ground vehicles and other equipment.</p>
+          <p>Our industrial related systems and components enhance the performance of industrial gas and steam turbines, reciprocating engines, compressors, wind turbines, electrical grids and other energy related industrial equipment. The company’s innovative fluid energy, combustion control, electrical energy, and motion control systems help customers offer cleaner, more reliable and more efficient equipment. Our customers include leading original equipment manufacturers and end users of their products.</p>
+        </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" alt="Video" src="assets/images/article-image.jpg" >
+
+    </div>
+    <div class="row">
+        <div class="col-12 px-5">
+          <p class="video-caption"><strong>IMAGE/VIDEO CAPTION</strong></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+    </div>
+    <div class="row mb-5 no-gutters px-4">
+      <div class="col-4 col-sm-5 col-md-4 col-lg-4 col-xl-4"><a href="javascript:void(0);" title="Save this Article" class=""><img src="assets/images/save-icon-footer.png" alt="Logo"></a>&nbsp;&nbsp;&nbsp;<span class="utility-text hidden-xs-down">SAVE THIS ARTICLE</span></div>
+      <div class="col-8 col-sm-7 col-md-8 col-lg-8 col-xl-8 text-right"><span class="utility-text hidden-xs-down d-inline-block pb-3">SHARE THIS ARTICLE</span>&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="fa fa-linkedin utility-icon round  px-2 fa-2x mt-1"></a> <a href="javascript:void(0);"  class="fa fa-facebook utility-icon round px-2 fa-2x"></a> <a href="javascript:void(0);"  class="fa fa-twitter utility-icon round px-2 fa-2x"></a></div>
+    </div>
+  </div>
+
+</article>
+<article>
+    <div class="container">
+       <div class="row no-gutters row-eq-height mb-5">
+          <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 prev-box py-3">
+              <p class="px-4"><a href="javascript:void(0);" class="article-back">BACK TO LISTING</a></p>
+              <a href="javascirpt:void(0);" title="Prev" class="prev-btn"><img src="assets/images/prev.png" alt="Prev"></a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 next-box  py-3">
+            <p class="px-4"><a href="javascript:void(0);" class="article-next">NEXT</a></p>
+            <p class="px-4"><a href="javascript:void(0);" class="next-article">Next Generation 505 Stream Turbine Controllers</a></p>
+            <p class="px-4">From simple single valve, to more complex single extraction or admission steam</p>
+            <a href="javascirpt:void(0);" title="Next" class="next-btn"><img src="assets/images/next.png" alt="Next"></a>
+          </div>
+       </div>
+    </div>
+</article>
+
+<footer class="footer">
+  <div class="footer-column">
+      <div class="container">
+        <!-- <div class="row row-eq-height">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 first-column">
+          </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 pt-4 text-center">
+                <a href="javascript:void(0);" class="back back-to-top">Back to top <span class="fa fa-angle-up back"></span></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            </div>
+        </div> -->
+        <div class="row row-eq-height">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 column">
+              <h4 class="footer-title">Sign up to our newsletter</h4>
+              <div class="form-group row pt-3">
+                <div class="col-12">
+                  <label for="inputEmail" class="sr-only">Email address</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="John@gmail.com">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-12">
+                  <label for="inputPassword" class="sr-only">Email address</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="********">
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+              <p class="mt-4">Connect with us  <a href="javascript:void(0);" class="fa fa-linkedin icon px-2 fa-2x"></a> <a href="javascript:void(0);"  class="fa fa-facebook px-2 icon fa-2x"></a> <a href="javascript:void(0);"  class="fa fa-twitter icon px-2  fa-2x"></a></p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 column">
+              <h4 class="footer-title">We'd love to hear from you...</h4>
+              <p class="footer-description">Send us your feedback on our Beta site and tell us how we can improve it!</p>
+                <div class="form-group row">
+                  <div class="col-6">
+                    <label for="firstName" class="sr-only">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="John">
+                  </div>
+                  <div class="col-6">
+                    <label for="lastName" class="sr-only">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Lesley">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12">
+                    <label for="feedbackEmail" class="sr-only">First Name</label>
+                    <input type="email" class="form-control" id="feedbackEmail" placeholder="John@gmail.com">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12">
+                    <label for="feedbackText" class="sr-only">Example textarea</label>
+                    <textarea class="form-control" id="feedbackText" rows="2"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 column">
+              <h4  class="footer-title">Did you find what you are looking for ?</h4>
+              <p class="footer-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
+              <button class="btn btn-primary btn-block" type="submit">HELPDESK</button>
+              <button class="btn btn-primary btn-block" type="submit" onclick="window.location.href='FAQPAGE.html'">FAQS</button>
+              <button class="btn btn-primary btn-block" type="submit">CHECK MY DELIVERY STATUS</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="legal-block py-4">
+      <div class="container">
+          <div class="row  no-gutters">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 legal-links push-lg-6 push-xl-6">
+              <p><span class="hidden-md-down">&nbsp;|&nbsp;</span><a href="javascript:void(0);">Cookie Policy</a>&nbsp;|&nbsp;<a href="javascript:void(0);">Terms &amp; Conditions</a>&nbsp;|&nbsp;<a href="javascript:void(0);">Sitemap</a></p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 copyright pull-lg-6 pull-xl-6">
+              <p>&copy; 2017 Wipro &amp; Woodward - Concept All rights reserved</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</footer>
+  </div>
+
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/lib/jquery-2.0.0.min.js">\x3C/script>')</script>
+  <script type="text/javascript" src="assets/lib/bootstrap/tether.min.js" async></script>
+  <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.min.js" async></script>
+  <script type="text/javascript" src="assets/js/common.js" async></script>
+</body>
+</html>
